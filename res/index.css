@@ -1,0 +1,142 @@
+/*
+color palletes
+4C3F91
+9145B6
+B958A5
+FF5677
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.main_container{
+    height: 100vh;
+}
+
+.flex_box{
+    display: flex;
+    width: 100%;
+}
+
+.left_cont{
+    width: 30%;
+    background-color: #4C3F91;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.left_cont > h1{
+    text-align: center;
+}
+
+.right_cont{
+    width: 70%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.member_form > div{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.input_cont > input{
+   
+    padding: 10px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.input_cont{
+    position: relative;
+}
+
+.empty > label{
+    font-size: 15px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.eye_icon{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.eye_icon:hover{
+    transform: scale(1.2);
+}
+
+.filled > label{
+    top: -17%;
+    left: 5%;
+    background: #eee;
+    transition: all 0.3s;
+}
+
+.error{
+    color: red;
+    font-size: 90%;
+    transition: opacity 0.2s;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.submit_button{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #B958A5;
+    border: 1px solid #B958A5;
+    border-radius: 50px;
+    font-weight: 400;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: 85%;
+}
+
+.submit_button:hover{
+    transform: scale(1.06);
+}
+
+.flex-box{
+    display: flex;
+}
+
+.normal_btn{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #000;
+    background: #eee;
+    border: 1px solid #B958A5;
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: 85%;
+    margin-left: 10px;
+}
+
+.normal_btn:hover{
+    transform: scale(1.06);
+}

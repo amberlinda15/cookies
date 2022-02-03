@@ -1,9 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./res/index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+        <link href="./res/index.css" rel="stylesheet"/>
     </head>
     <body>
+        <div class="main_container flex_box">
+            <div class="left_cont" id="left-cont">
+                <h1>ADD MEMBERS TO YOUR TEAM</h1>
+            </div>
+            <div class="right_cont">
+                <form class="member_form" onsubmit="validateFormHandler()" action="./index.html" id="add_member_form">
+                    <div class="input_cont empty">
+                        <label>First name</label>
+                        <input type="text" name="yourname" id="your-name" required/>
+                        <p class="error hide">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Last name</label>
+                        <input type="text" name="lastname" id="last-name" required/>
+                        <p class="error hide">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" required/>
+                        <p class="error hide" id="email_error">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Phone number</label>
+                        <input type="number" name="phonenumber" id="phonenumber" required/>
+                        <p class="error hide" id="phonenumber_error">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Gender</label>
+                        <input type="text" required name="gender"/>
+                        <p class="error hide" id="gender_error">error</p>
+                    </div>
+                    <div class="input_cont empty">
+                        <label>Password</label>
+                        <input type="password" name = "password" id="password_field" required/>
+                        <ion-icon name="eye-outline" class="eye_icon" onclick="showPasswordHandler()"></ion-icon>
+                        <p class="error hide" id="password_error">error</p>
+                    </div>
+                    <div class="flex-box">
+                        <button type="submit" class="submit_button">submit</button>
+                        <button class="normal_btn" onclick="colorChangeHandler()">Change bg colour</button>
+                        <button class="normal_btn" onclick="imgChangeHandler()">Change bg img</button>
+                        <button class="normal_btn" onclick="clearCookieHandler()">Clear cookies</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./res/script.js"></script>
     </body>
 </html>
